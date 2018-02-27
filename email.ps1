@@ -1,6 +1,6 @@
 ﻿$From = "From Address"
 $To = "To Address"
-$Cc = "gokulrajkumar.r@thestreet.com"
+$Cc = "CC Address"
 $Subject = "Email Subject"
 $Body = "Insert body text here"
 $SMTPServer = "SMTP Server"
