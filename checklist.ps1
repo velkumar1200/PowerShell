@@ -2,13 +2,13 @@
 # @ Velkumar
 # @ Script for Daily CheckList Taken by
 ####################################################################
-$From = "velkumar.l@thestreet.com"
-$To = "IndiaPTS@thedeal.com"
+$From = "From address"
+$To = "To address"
 $Subject = "Daily Checklist Taken"
-$SMTPServer = "bxsmtppro"
-$SMTPPort = "25"
+$SMTPServer = "smtp server"
+$SMTPPort = "portnumber"
 #Specify the path of the excel file
-$p = cd "X:\Technology\PTS\India\Checklist"
+$p = cd "X:\Checklist"
 $a = Get-ChildItem | where {$_.LastWriteTime}|select -Last 1
 $b = Get-ChildItem | where {$_.LastWriteTime}|select -Last 1 Name
 $FileName = ($b).Name
@@ -50,8 +50,8 @@ $objExcel.Quit()
 $date=(Get-Date).DayOfWeek
 if($date -eq "Friday")
 {
-$To = "NeilFletcher@boardex.com"
-$cc = "IndiaPTS@thedeal.com"
+$To = "To address"
+$cc = "CC address"
 Send-MailMessage -From $From -to $To -Cc $cc -Subject $Subject `
 -Body $write -SmtpServer $SMTPServer -port $SMTPPort 
 }
