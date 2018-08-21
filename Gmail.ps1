@@ -1,9 +1,9 @@
 ﻿$Body = "Sample Email Body" 
 $SmtpServer = 'smtp.gmail.com' 
-$SmtpUser = 'kspriyaranjan@gmail.com' 
+$SmtpUser = 'velkumar1200@gmail.com' 
 $smtpPassword = '<Input Gmail Account Password Here>' 
-$MailtTo = 'priyaranjan.ks@hotmail.com' 
-$MailFrom = 'kspriyaranjan@gmail.com' 
+$MailtTo = 'velkumar1200@gmail.com' 
+$MailFrom = 'velkumar1200@gmail.com' 
 $MailSubject = "Testing Mail Attachments using $SmtpServer" 
 $Credentials = New-Object System.Management.Automation.PSCredential -ArgumentList $SmtpUser, $($smtpPassword | 
 ConvertTo-SecureString -AsPlainText -Force) 
